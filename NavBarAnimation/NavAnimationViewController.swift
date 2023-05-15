@@ -171,7 +171,7 @@ class NavAnimationViewController: UIViewController, UITableViewDelegate, UITable
   }
   
   @objc private func addButtonTapped(_ sender:UIBarButtonItem){
-    UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 2, initialSpringVelocity: 10) {
+    UIView.animate(withDuration: 1.5, delay: 0, usingSpringWithDamping: 0.1, initialSpringVelocity: 5) {
       if (self.isUiViewExpanded) {
         self.uiView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 100)
         self.titleLbl.text = "SNACKS"
